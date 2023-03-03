@@ -1,0 +1,10 @@
+function fetchPulseData() {
+  // Generate a random pulse value between 60 and 100 bpm
+  const pulse = Math.floor(Math.random() * 41) + 60;
+  
+  // Return the pulse reading as an object
+  return {
+    timestamp: Date.now(),
+    pulse: pulse
+  };
+}
